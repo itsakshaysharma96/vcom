@@ -1,0 +1,98 @@
+{
+  "id": "design-5",
+  "theme": { "mode": "light", "primary": "cyan" },
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "Legal Practice",
+      "title": "Professional Excellence",
+      "subtitle": "Sophisticated legal practice with traditional elegance",
+      "image": { "src": "/homepage/project/legal.png" }
+    },
+    {
+      "type": "project-description",
+      "title": "SOPHISTICATED LEGAL PRACTICE with TRADITIONAL ELEGANCE",
+      "description": "This legal practice space combines the gravitas of traditional law offices with modern functionality. Rich wood paneling, custom built-ins, and professional lighting create an environment that commands respect and inspires confidence."
+    },
+    {
+      "type": "image-gallery",
+      "layout": "grid-2x2",
+      "images": [
+        {
+          "src": "/homepage/project/legal.png",
+          "alt": "Law library",
+          "title": "Law Library",
+          "description": "Extensive collection with custom shelving"
+        },
+        {
+          "src": "/homepage/project/law.png",
+          "alt": "Conference room",
+          "title": "Conference Room",
+          "description": "Formal meeting space for client consultations"
+        },
+        {
+          "src": "/homepage/project/dubai.png",
+          "alt": "Partner office",
+          "title": "Partner Office",
+          "description": "Executive workspace with city views"
+        },
+        {
+          "src": "/homepage/project/luxury.png",
+          "alt": "Reception area",
+          "title": "Reception",
+          "description": "Welcoming entrance with professional design"
+        }
+      ]
+    },
+    {
+      "type": "project-description",
+      "title": "HONORING TRADITION while EMBRACING MODERNITY",
+      "description": "The design respects the time-honored traditions of legal practice while incorporating contemporary amenities. Every detail, from the custom millwork to the strategic lighting, reinforces the firm's commitment to excellence and professionalism."
+    },
+    {
+      "type": "image-gallery",
+      "layout": "grid-1x3",
+      "images": [
+        {
+          "src": "/homepage/project/panjim.png",
+          "alt": "Associate office",
+          "title": "Associate Office",
+          "description": "Professional workspace with natural light"
+        },
+        {
+          "src": "/homepage/project/legal.png",
+          "alt": "Client lounge",
+          "title": "Client Lounge",
+          "description": "Comfortable waiting area with privacy"
+        },
+        {
+          "src": "/homepage/project/law.png",
+          "alt": "Document room",
+          "title": "Document Room",
+          "description": "Secure storage and research facility"
+        }
+      ]
+    },
+    {
+      "type": "project-slider",
+      "title": "More Projects",
+      "slides": [
+        {
+          "title": "Legal Practice",
+          "image": { "src": "/homepage/project/legal.png" },
+          "buttonText": "TAKE LOOK"
+        },
+        {
+          "title": "Law Office",
+          "image": { "src": "/homepage/project/law.png" },
+          "buttonText": "TAKE LOOK"
+        },
+        {
+          "title": "Dubai Office",
+          "image": { "src": "/homepage/project/dubai.png" },
+          "buttonText": "TAKE LOOK"
+        }
+      ]
+    }
+  ]
+}

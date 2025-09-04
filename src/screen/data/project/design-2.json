@@ -1,0 +1,100 @@
+{
+  "id": "design-2",
+  "theme": { "mode": "light", "primary": "rose" },
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "Holiday Home",
+      "title": "Panjim Retreat",
+      "subtitle": "A coastal sanctuary designed for relaxation and family gatherings",
+      "image": { "src": "/homepage/project/panjim.png" }
+    },
+    {
+      "type": "project-description",
+      "title": "A COASTAL SANCTUARY designed for RELAXATION and FAMILY GATHERINGS",
+      "description": "This holiday home in Panjim captures the essence of coastal living with open spaces, natural materials, and panoramic views. Every room flows seamlessly into the next, creating a sense of harmony with the surrounding landscape."
+    },
+    {
+      "type": "image-gallery",
+      "layout": "grid-2x2",
+      "images": [
+        {
+          "src": "/homepage/project/panjim.png",
+          "alt": "Living area with ocean view",
+          "title": "Living Area",
+          "description": "Spacious open-plan living with ocean views"
+        },
+        {
+          "src": "/homepage/project/luxury.png",
+          "alt": "Master bedroom",
+          "title": "Master Suite",
+          "description": "Luxurious bedroom with private balcony"
+        },
+        {
+          "src": "/homepage/project/dubai.png",
+          "alt": "Kitchen and dining",
+          "title": "Kitchen & Dining",
+          "description": "Modern kitchen with island seating"
+        },
+        {
+          "src": "/homepage/project/law.png",
+          "alt": "Outdoor terrace",
+          "title": "Outdoor Terrace",
+          "description": "Al fresco dining and relaxation area"
+        }
+      ]
+    },
+    {
+      "type": "project-description",
+      "title": "BLENDING INDOOR COMFORT with OUTDOOR BEAUTY",
+      "description": "The design emphasizes the connection between interior and exterior spaces, with large glass doors and windows that frame the stunning coastal views. Natural materials like wood and stone create a warm, inviting atmosphere."
+    },
+    {
+      "type": "image-gallery",
+      "layout": "grid-1x3",
+      "images": [
+        {
+          "src": "/homepage/project/legal.png",
+          "alt": "Guest bedroom",
+          "title": "Guest Bedroom",
+          "description": "Comfortable accommodation for visitors"
+        },
+        {
+          "src": "/homepage/project/panjim.png",
+          "alt": "Bathroom with natural light",
+          "title": "Spa Bathroom",
+          "description": "Luxurious bathroom with natural materials"
+        },
+        {
+          "src": "/homepage/project/luxury.png",
+          "alt": "Study nook",
+          "title": "Study Nook",
+          "description": "Quiet workspace with garden views"
+        }
+      ]
+    },
+    {
+      "type": "project-slider",
+      "title": "More Projects",
+      "slides": [
+        {
+          "title": "Holiday Home",
+          "image": { "src": "/homepage/project/panjim.png" },
+          "buttonText": "TAKE LOOK"
+        },
+        {
+          "title": "Luxury Apartment",
+          "image": { "src": "/homepage/project/luxury.png" },
+          "buttonText": "TAKE LOOK"
+        },
+        {
+          "title": "Law Office",
+          "image": { "src": "/homepage/project/law.png" },
+          "buttonText": "TAKE LOOK"
+        }
+      ]
+    }
+  ]
+}
+
+
