@@ -1,0 +1,93 @@
+
+{
+  "id": "legal-chamber",
+  "theme": { "mode": "light", "primary": "indigo" },
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "",
+      "title": "Legal Chamber",
+      "subtitle": "Golf Links, New Delhi",
+      "actions": [
+        { "label": "Get started", "href": "#" },
+        { "label": "Learn more", "href": "#", "variant": "ghost" }
+      ],
+      "image": { "src": "/project/legal-chamber/banner.png" }
+    },
+    {
+      "type": "project-description",
+      "title": "a DISTINGUISHED LEGAL CHAMBER  blending AUTHORITY with REFINEMENT",
+      "description": "Meher Sra Designs envisioned this legal chamber as a space of quiet power and elegance. Every element was tailored with precision — from bespoke joinery and rich finishes to furniture crafted for both comfort and presence. Balancing functionality with understated luxury, the chamber was designed to inspire confidence while offering a sense of calm. Subtle detailing, curated accents, and refined textures elevate the space into more than just a workplace — it becomes a setting that reflects stature, discretion, and timeless sophistication."
+    },
+    {
+      "type": "image-gallery",
+      "layout": "grid-2x2",
+      "images": [
+        {
+          "src": "/project/legal-chamber/g1.png",
+          "alt": "legal chamber"
+        },
+        {
+          "src": "/project/legal-chamber/g2.png",
+          "alt": "legal chamber"
+        },
+        {
+          "src": "/project/legal-chamber/g3.png",
+          "alt": "legal chamber"
+        },
+        {
+          "src": "/project/legal-chamber/g4.png",
+          "alt": "Luxury seating area"
+        },
+        {
+          "src": "/project/legal-chamber/g5.png",
+          "alt": "Office workspace"
+        }
+      ]
+    },
+    {
+      "type": "project-description2",
+      "title": "a DISTINGUISHED LEGAL CHAMBER  blending AUTHORITY with REFINEMENT",
+      "description": "Meher Sra Designs envisioned this legal chamber as a space of quiet power and elegance. Every element was tailored with precision — from bespoke joinery and rich finishes to furniture crafted for both comfort and presence. Balancing functionality with understated luxury, the chamber was designed to inspire confidence while offering a sense of calm. Subtle detailing, curated accents, and refined textures elevate the space into more than just a workplace — it becomes a setting that reflects stature, discretion, and timeless sophistication."
+    },
+    {
+      "type": "image-gallery2",
+      "layout": "grid-2x2",
+      "images": [
+
+        {
+          "src": "/project/legal-chamber/g6.png",
+          "alt": "legal chamber"
+        },
+        {
+          "src": "/project/legal-chamber/g7.png",
+          "alt": "legal chamber"
+        }
+      ]
+    },
+    {
+      "type": "project-slider",
+      "title": "More Projects",
+      "slides": [
+        {
+          "title": "Legal Chamber",
+          "image": { "src": "/project/legal-chamber/s1.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/legal-chamber"
+        },
+        {
+          "title": "Holiday Home",
+          "image": { "src": "/project/legal-chamber/s3.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/holiday-home-marina"
+        },
+        {
+          "title": "Luxury Apartment",
+          "image": { "src": "/project/legal-chamber/s2.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/luxury-apartment"
+        }
+      ]
+    }
+  ]
+}

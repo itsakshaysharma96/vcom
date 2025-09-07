@@ -38,7 +38,7 @@ export function Services() {
 		},
 		{
 			number: "04",
-			title: "Turnkey Installation",
+			title: "Delivery & Installation",
        icon:Accordion4,
 			description:
 				"Comprehensive project management from initial concept through final installation. Our experienced team coordinates all trades and ensures flawless execution.",
@@ -46,7 +46,7 @@ export function Services() {
 	];
 
 	return (
-		<section id="services" className="w-full px-6 py-16 bg-white">
+		<section id="services" className="w-full px-6 md:py-16 py-10 bg-white">
 			<div className="max-w-7xl mx-auto">
 				<h2 className="font-serif text-2xl lg:text-4xl font-medium text-black tracking-widest mb-12 text-center mt-10">
 					HOW WE CAN HELP YOU
@@ -61,9 +61,9 @@ export function Services() {
 
 							<AccordionTrigger className="flex items-center gap-6 hover:no-underline text-left py-3 m-0">
 								<div className="flex justify-between items-center w-full">
-									<div className="md:w-[50%]"><Image src={service?.icon} alt={`Accor${index}`} width={50} height={50}/></div>
-									<div className="flex items-center justify-start w-[50%] gap-3">
-										<div className="text-[20px] md:text-[35px] font-bold text-black min-w-[60px]">
+									<div className="md:w-[50%] w-0"><Image src={service?.icon} alt={`Accor${index}`} width={50} height={50}/></div>
+									<div className="flex items-center justify-start md:w-[50%] w-[100%] gap-3">
+										<div className="text-[20px] md:text-[35px] font-bold text-black md:min-w-[60px] min-w-[30px]">
 											{service.number}
 										</div>
 										<div className="flex-1">
@@ -74,8 +74,8 @@ export function Services() {
 									</div>
 								</div>
 							</AccordionTrigger>
-							<AccordionContent className="pl-[43rem] pr-8 pb-4">
-								<p className="text-black leading-relaxed text-xl">
+							<AccordionContent className="md:pl-[43rem] pr-8 pb-4">
+								<p className="text-black leading-relaxed md:text-xl text-base">
 									{service.description}
 								</p>
 							</AccordionContent>
@@ -83,9 +83,7 @@ export function Services() {
 					))}
 				</Accordion>
 </div>
-        <Button variant="outline" className="text-lg mt-12 text-center flex rounded-none md:px-12 tracking-wider py-6 bg-primary text-primary-foreground hover:bg-primary/90
-               before:w-[2rem] before:border-[.5px] before:border-primary-foreground
-               after:w-[2rem] after:border-[.5px] after:border-primary-foreground uppercase">
+        <Button variant="outline" className="btn-sophie md:text-lg mt-12 text-center flex uppercase rounded-none md:px-12 px-6 mx-auto md:mx-0 py-6 bg-primary tracking-wider text-primary-foreground hover:bg-primary/90">
              Discuss My Project
             </Button>
 			</div>

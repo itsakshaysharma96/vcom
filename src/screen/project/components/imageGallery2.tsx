@@ -1,18 +1,9 @@
+"use client"
+
 import Image from 'next/image'
 import React from 'react'
-
-export type GalleryImage = {
-  src: string
-  alt?: string
-  title?: string
-  description?: string
-}
-
-export type ImageGalleryBlock = {
-  type: 'image-gallery'
-  layout: 'grid-2x2' | 'grid-1x3' | 'grid-3x1' | 'masonry'
-  images: GalleryImage[]
-}
+import { ImageGalleryBlock } from './ImageGallery'
+import { useInView } from '@/lib/useInView'
 
 type Props = {
   block: ImageGalleryBlock
@@ -20,6 +11,7 @@ type Props = {
 
 const ImageGalleryTwo: React.FC<Props> = ({ block }) => {
   const { layout, images } = block
+  const { ref, isInView } = useInView<HTMLDivElement>()
 
   const getGridClasses = () => {
     switch (layout) {
@@ -37,7 +29,7 @@ const ImageGalleryTwo: React.FC<Props> = ({ block }) => {
   }
 
   const getImageClasses = (index: number) => {
-    const baseClasses = 'rounded-lg overflow-hidden'
+    const baseClasses = 'rounded-none overflow-hidden'
 
     if (layout === 'masonry') {
       return `${baseClasses} break-inside-avoid`
@@ -52,11 +44,11 @@ const ImageGalleryTwo: React.FC<Props> = ({ block }) => {
   }
 
   return (
-    <section className="w-full px-6 py-16">
+    <section className="w-full px-6 pt-16 md:pb-32 pb-16">
       <div className="max-w-7xl mx-auto">
-        <div className={getGridClasses()}>
+        <div className={getGridClasses()} ref={ref}>
           {images.map((image, index) => (
-            <div key={index} className={getImageClasses(index)}>
+            <div key={index} className={`gallery-image ${getImageClasses(index)} ${isInView ? 'in-view' : ''}`}>
               <Image
                 src={image.src}
                 alt={image.alt || `Gallery image ${index + 1}`}

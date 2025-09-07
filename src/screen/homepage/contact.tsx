@@ -5,7 +5,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 
 export function Contact() {
   return (
-    <section id="contact" className="w-full px-6 py-16 bg-white">
+    <section id="contact" className="w-full px-6 md:py-16 py-10 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
           <div>
@@ -27,9 +27,7 @@ export function Contact() {
                 </label>
               </div>
 
-              <Button className="text-lg mx-auto text-center flex rounded-none px-12 tracking-wider py-6 bg-primary text-primary-foreground hover:bg-primary/90
-               before:w-[2rem] before:border-[.5px] before:border-primary-foreground
-               after:w-[2rem] after:border-[.5px] after:border-primary-foreground">
+              <Button className="btn-sophie text-lg mx-auto text-center flex rounded-none px-12 tracking-wider py-6 bg-primary text-primary-foreground hover:bg-primary/90">
                 SEND
               </Button>
             </div>

@@ -1,8 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import Banner1 from "@/public/banner/1.png"
 import Banner2 from "@/public/banner/2.png"
 import Banner3 from "@/public/banner/3.png"
@@ -73,7 +71,7 @@ export function BannerSlider() {
   }
 
   return (
-    <section className="relative h-[80vh] overflow-hidden">
+    <section className="relative md:h-[80vh] h-[26vh] overflow-hidden">
       {/* Slides */}
       <div className="relative h-full">
         {banners.map((banner, index) => (
@@ -116,7 +114,7 @@ export function BannerSlider() {
         {banners.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`md:w-3 md:h-3 w-2 h-2 rounded-full transition-all duration-300 ${
               index === currentSlide ? "bg-white scale-110" : "bg-white/50 hover:bg-white/75"
             }`}
             onClick={() => goToSlide(index)}

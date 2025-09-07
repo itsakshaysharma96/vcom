@@ -1,0 +1,93 @@
+
+{
+  "id": "luxury-apartment",
+  "theme": { "mode": "light", "primary": "indigo" },
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "",
+      "title": "Luxury Apartment",
+      "subtitle": "Marina",
+      "actions": [
+        { "label": "Get started", "href": "#" },
+        { "label": "Learn more", "href": "#", "variant": "ghost" }
+      ],
+      "image": { "src": "/project/luxury-apartment/banner.png" }
+    },
+    {
+      "type": "project-description",
+      "title": "a LUXURY APARTMENT defined by MODERN SOPHISTICATION",
+      "description": "Meher Sra Designs curated this Dubai residence as a statement in contemporary luxury. The interiors are layered with refined finishes, bespoke joinery, and tailored furniture, each detail carefully chosen to reflect elegance and precision. With expansive layouts, sculptural elements, and a palette that balances warmth with understated glamour, the apartment embodies a modern yet timeless sensibility. The result is a home that is not just visually striking but also deeply personal — a seamless blend of style, comfort, and elevated living."
+    },
+    {
+      "type": "image-gallery",
+      "layout": "grid-2x2",
+      "images": [
+        {
+          "src": "/project/luxury-apartment/g1.png",
+          "alt": "Luxury Apartment"
+        },
+        {
+          "src": "/project/luxury-apartment/g2.png",
+          "alt": "Luxury Apartment"
+        },
+        {
+          "src": "/project/luxury-apartment/g3.png",
+          "alt": "Luxury Apartment"
+        },
+        {
+          "src": "/project/luxury-apartment/g4.png",
+          "alt": "Luxury seating area"
+        },
+        {
+          "src": "/project/luxury-apartment/g5.png",
+          "alt": "Office workspace"
+        }
+      ]
+    },
+    {
+      "type": "project-description2",
+      "title": "a LUXURY APARTMENT defined by MODERN SOPHISTICATION",
+      "description": "Meher Sra Designs curated this Dubai residence as a statement in contemporary luxury. The interiors are layered with refined finishes, bespoke joinery, and tailored furniture, each detail carefully chosen to reflect elegance and precision. With expansive layouts, sculptural elements, and a palette that balances warmth with understated glamour, the apartment embodies a modern yet timeless sensibility. The result is a home that is not just visually striking but also deeply personal — a seamless blend of style, comfort, and elevated living."
+    },
+    {
+      "type": "image-gallery2",
+      "layout": "grid-2x2",
+      "images": [
+
+        {
+          "src": "/project/luxury-apartment/g6.png",
+          "alt": "Luxury Apartment"
+        },
+        {
+          "src": "/project/luxury-apartment/g7.png",
+          "alt": "Luxury Apartment"
+        }
+      ]
+    },
+    {
+      "type": "project-slider",
+      "title": "More Projects",
+      "slides": [
+        {
+          "title": "Luxury Apartment",
+          "image": { "src": "/project/luxury-apartment/s2.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/luxury-apartment"
+        },
+        {
+          "title": "Law Office",
+          "image": { "src": "/project/luxury-apartment/s1.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/law-office"
+        },
+        {
+          "title": "Holiday Home",
+          "image": { "src": "/project/luxury-apartment/s3.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/holiday-home-marina"
+        }
+      ]
+    }
+  ]
+}

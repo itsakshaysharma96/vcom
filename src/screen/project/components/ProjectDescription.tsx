@@ -1,7 +1,7 @@
 import React from 'react'
 
 export type ProjectDescriptionBlock = {
-  type: 'project-description'
+  type: 'project-description' | 'project-description2'
   title: string
   description: string
 }
@@ -14,7 +14,7 @@ const ProjectDescription: React.FC<Props> = ({ block }) => {
   const { title, description } = block
 
   return (
-    <section className="w-full px-6 py-16">
+    <section className="w-full px-6 md:py-16 py-0">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           <div>

@@ -1,0 +1,93 @@
+
+{
+  "id": "holiday-home-panaji",
+  "theme": { "mode": "light", "primary": "indigo" },
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "",
+      "title": "HOLIDAY HOME",
+      "subtitle": "Panaji",
+      "actions": [
+        { "label": "Get started", "href": "#" },
+        { "label": "Learn more", "href": "#", "variant": "ghost" }
+      ],
+      "image": { "src": "/project/holiday-home-panaji/banner.png" }
+    },
+    {
+      "type": "project-description",
+      "title": "a COASTAL HOLIDAY HOME INFUSES with EASE and ELEGANCE",
+      "description": "Meher Sra Designs crafted this holiday home as a serene retreat where contemporary design meets the charm of coastal living. Light-filled interiors, airy layouts, and natural textures set the tone for a space that feels both sophisticated and effortlessly relaxed. Every corner was thoughtfully detailed — bespoke furniture, artisanal finishes, and a palette inspired by the sea and sand. The result is a home that balances elegance with comfort, offering its residents a sanctuary that celebrates the essence of a Goan getaway while remaining timeless in design."
+    },
+    {
+      "type": "image-gallery",
+      "layout": "grid-2x2",
+      "images": [
+        {
+          "src": "/project/holiday-home-panaji/g1.png",
+          "alt": "Holiday Home Panaji"
+        },
+        {
+          "src": "/project/holiday-home-panaji/g2.png",
+          "alt": "Holiday Home Panaji"
+        },
+        {
+          "src": "/project/holiday-home-panaji/g3.png",
+          "alt": "Holiday Home Panaji"
+        },
+        {
+          "src": "/project/holiday-home-panaji/g4.png",
+          "alt": "Luxury seating area"
+        },
+        {
+          "src": "/project/holiday-home-panaji/g5.png",
+          "alt": "Office workspace"
+        }
+      ]
+    },
+    {
+      "type": "project-description2",
+      "title": "a COASTAL HOLIDAY HOME INFUSES with EASE and ELEGANCE",
+      "description": "Meher Sra Designs crafted this holiday home as a serene retreat where contemporary design meets the charm of coastal living. Light-filled interiors, airy layouts, and natural textures set the tone for a space that feels both sophisticated and effortlessly relaxed. Every corner was thoughtfully detailed — bespoke furniture, artisanal finishes, and a palette inspired by the sea and sand. The result is a home that balances elegance with comfort, offering its residents a sanctuary that celebrates the essence of a Goan getaway while remaining timeless in design."
+    },
+    {
+      "type": "image-gallery2",
+      "layout": "grid-2x2",
+      "images": [
+
+        {
+          "src": "/project/holiday-home-panaji/g6.png",
+          "alt": "Holiday Home Panaji"
+        },
+        {
+          "src": "/project/holiday-home-panaji/g7.png",
+          "alt": "Holiday Home Panaji"
+        }
+      ]
+    },
+    {
+      "type": "project-slider",
+      "title": "More Projects",
+      "slides": [
+        {
+          "title": "Holiday Homes",
+          "image": { "src": "/project/holiday-home-panaji/s1.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/holiday-home-panaji"
+        },
+        {
+          "title": "Luxury Apartment",
+          "image": { "src": "/project/holiday-home-panaji/s2.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/luxury-apartment"
+        },
+        {
+          "title": "Holiday Home",
+          "image": { "src": "/project/holiday-home-panaji/s3.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/holiday-home-marina"
+        }
+      ]
+    }
+  ]
+}

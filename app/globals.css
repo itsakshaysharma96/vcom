@@ -1,3 +1,76 @@
+/* Reusable button hover inspired by Sophie Paterson Interiors */
+.btn-sophie {
+  position: relative;
+  overflow: hidden;
+}
+.btn-sophie::before,
+.btn-sophie::after {
+  content: "";
+  position: absolute;
+  left: 1.25rem; /* match button horizontal padding */
+  right: 1.25rem;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn-sophie::before {
+  top: 0.5rem;
+  transform-origin: left;
+}
+.btn-sophie::after {
+  bottom: 0.5rem;
+  transform-origin: right;
+}
+.btn-sophie:hover::before {
+  transform: scaleX(1);
+}
+.btn-sophie:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Hero image animation inspired by Sophie Paterson Interiors - The Company section */
+.hero-image {
+  opacity: 0;
+  transform: translateX(-30px) scale(0.98);
+  transition: opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1), transform 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-image.in-view {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.hero-image:hover {
+  transform: translateX(0) scale(1.01);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Gallery image animation - Sophie Paterson style with staggered effect */
+.gallery-image {
+  opacity: 0;
+  transform: translateX(-30px) scale(0.98);
+  transition: opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1), transform 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-image.in-view {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.gallery-image:hover {
+  transform: translateX(0) scale(1.01);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Staggered delays for gallery images */
+.gallery-image:nth-child(1).in-view { transition-delay: 0.2s; }
+.gallery-image:nth-child(2).in-view { transition-delay: 0.4s; }
+.gallery-image:nth-child(3).in-view { transition-delay: 0.6s; }
+.gallery-image:nth-child(4).in-view { transition-delay: 0.8s; }
+.gallery-image:nth-child(5).in-view { transition-delay: 1.0s; }
+.gallery-image:nth-child(6).in-view { transition-delay: 1.2s; }
 @import "tailwindcss";
 @import "tw-animate-css";
 

@@ -1,90 +1,93 @@
 
 {
-    "id": "design-1",
-    "theme": { "mode": "light", "primary": "indigo" },
-    "blocks": [
-      {
-        "type": "hero",
-        "eyebrow": "",
-        "title": "Law Office",
-        "subtitle": "Golf Links",
-        "actions": [
-          { "label": "Get started", "href": "#" },
-          { "label": "Learn more", "href": "#", "variant": "ghost" }
-        ],
-        "image": { "src": "/banner/5.png" }
-      },
-      {
-        "type": "project-description",
-        "title": "an IMPRESSIVE LAW OFFICE blending TIMELESS ELEGANCE with MODERN LUXURY",
-        "description": "Meher Sra Designs crafted this law office as an ode to authority, elegance, and modern functionality. Every aspect was envisioned and executed to the highest standard — from bespoke joinery and custom-crafted furniture to interiors layered with texture, balance, and refinement. The space reflects timeless grandeur while embracing a distinctly modern sensibility, creating an office that embodies both power and sophistication."
-      },
-      {
-        "type": "image-gallery",
-        "layout": "grid-2x2",
-        "images": [
-          {
-            "src": "/homepage/project/law.png",
-            "alt": "Law office waiting area"
-          },
-          {
-            "src": "/homepage/project/law.png",
-            "alt": "Law office waiting area"
-          },
-          {
-            "src": "/homepage/project/legal.png",
-            "alt": "Law office detail"
-          },
-          {
-            "src": "/homepage/project/luxury.png",
-            "alt": "Luxury seating area"
-          },
-          {
-            "src": "/homepage/project/panjim.png",
-            "alt": "Office workspace"
-          }
-        ]
-      },
-      {
-        "type": "project-description2",
-        "title": "an IMPRESSIVE LAW OFFICE blending TIMELESS ELEGANCE with MODERN LUXURY",
-        "description": "Meher Sra Designs crafted this law office as an ode to authority, elegance, and modern functionality. Every aspect was envisioned and executed to the highest standard — from bespoke joinery and custom-crafted furniture to interiors layered with texture, balance, and refinement. The space reflects timeless grandeur while embracing a distinctly modern sensibility, creating an office that embodies both power and sophistication."
-      },
-      {
-        "type": "image-gallery2",
-        "layout": "grid-2x2",
-        "images": [
+  "id": "law-office",
+  "theme": { "mode": "light", "primary": "indigo" },
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "",
+      "title": "Law Office",
+      "subtitle": "Golf Links",
+      "actions": [
+        { "label": "Get started", "href": "#" },
+        { "label": "Learn more", "href": "#", "variant": "ghost" }
+      ],
+      "image": { "src": "/project/law-office/banner.png" }
+    },
+    {
+      "type": "project-description",
+      "title": "an IMPRESSIVE LAW OFFICE blending TIMELESS ELEGANCE with MODERN LUXURY",
+      "description": "Meher Sra Designs crafted this law office as an ode to authority, elegance, and modern functionality. Every aspect was envisioned and executed to the highest standard — from bespoke joinery and custom-crafted furniture to interiors layered with texture, balance, and refinement. The space reflects timeless grandeur while embracing a distinctly modern sensibility, creating an office that embodies both power and sophistication."
+    },
+    {
+      "type": "image-gallery",
+      "layout": "grid-2x2",
+      "images": [
+        {
+          "src": "/project/law-office/g1.png",
+          "alt": "law office"
+        },
+        {
+          "src": "/project/law-office/g2.png",
+          "alt": "law office"
+        },
+        {
+          "src": "/project/law-office/g3.png",
+          "alt": "law office"
+        },
+        {
+          "src": "/project/law-office/g4.png",
+          "alt": "Luxury seating area"
+        },
+        {
+          "src": "/project/law-office/g5.png",
+          "alt": "Office workspace"
+        }
+      ]
+    },
+    {
+      "type": "project-description2",
+      "title": "an IMPRESSIVE LAW OFFICE blending TIMELESS ELEGANCE with MODERN LUXURY",
+      "description": "Meher Sra Designs crafted this law office as an ode to authority, elegance, and modern functionality. Every aspect was envisioned and executed to the highest standard — from bespoke joinery and custom-crafted furniture to interiors layered with texture, balance, and refinement. The space reflects timeless grandeur while embracing a distinctly modern sensibility, creating an office that embodies both power and sophistication."
+    },
+    {
+      "type": "image-gallery2",
+      "layout": "grid-2x2",
+      "images": [
 
-          {
-            "src": "/homepage/project/law.png",
-            "alt": "Law office waiting area"
-          },
-          {
-            "src": "/homepage/project/law.png",
-            "alt": "Law office waiting area"
-          }
-        ]
-      },
-      {
-        "type": "project-slider",
-        "title": "More Projects",
-        "slides": [
-          {
-            "title": "Legal Practice",
-            "image": { "src": "/homepage/project/legal.png" },
-            "buttonText": "TAKE LOOK"
-          },
-          {
-            "title": "Law Office",
-            "image": { "src": "/homepage/project/law.png" },
-            "buttonText": "TAKE LOOK"
-          },
-          {
-            "title": "Dubai Office",
-            "image": { "src": "/homepage/project/dubai.png" },
-            "buttonText": "TAKE LOOK"
-          }
-        ]
-      }
-    ]
-  }
+        {
+          "src": "/project/law-office/g6.png",
+          "alt": "law office"
+        },
+        {
+          "src": "/project/law-office/g7.png",
+          "alt": "law office"
+        }
+      ]
+    },
+    {
+      "type": "project-slider",
+      "title": "More Projects",
+      "slides": [
+        {
+          "title": "Law Office",
+          "image": { "src": "/project/law-office/s1.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/law-office"
+        },
+        {
+          "title": "Holiday Home",
+          "image": { "src": "/project/law-office/s3.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/holiday-home-marina"
+        },
+        {
+          "title": "Luxury Apartment",
+          "image": { "src": "/project/law-office/s2.png" },
+          "buttonText": "TAKE LOOK",
+          "buttonLink": "/luxury-apartment"
+        }
+      ]
+    }
+  ]
+}

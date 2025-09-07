@@ -2,6 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Vollkorn, Barlow } from "next/font/google"
 import "./globals.css"
+import { Header } from "@/src/screen/components/header"
+import { Footer } from "@/src/screen/components/footer"
 
 const vollkorn = Vollkorn({
   subsets: ["latin"],
@@ -29,7 +31,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${vollkorn.variable} ${barlow.variable} antialiased`}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
