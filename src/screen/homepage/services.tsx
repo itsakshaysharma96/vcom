@@ -17,21 +17,21 @@ export function Services() {
 	const services = [
 		{
 			number: "01",
-			title: "Interior Architecture & Design",
+			title: "Is Fine",
       icon:Accordion1,
 			description:
 				"Complete space planning and architectural interior solutions tailored to your lifestyle and functional needs. We create cohesive environments that seamlessly blend form and function.",
 		},
 		{
 			number: "02",
-			title: "FF&E Design & Styling",
+			title: "FF&E Design",
        icon:Accordion2,
 			description:
 				"Curated selection of furniture, fixtures, and equipment that reflects your personal style. From custom pieces to carefully sourced vintage finds, every element is chosen with intention.",
 		},
 		{
 			number: "03",
-			title: "Procurement & Sourcing",
+			title: "Procurement",
        icon:Accordion3,
 			description:
 				"Global network of artisans, manufacturers, and suppliers ensures access to unique materials and furnishings. We handle all logistics from sourcing to delivery.",

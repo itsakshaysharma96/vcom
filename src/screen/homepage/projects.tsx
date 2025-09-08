@@ -36,6 +36,7 @@ export function Projects() {
       const totalSnaps = snapList.length
       allSlides.forEach((slide, idx) => {
         const snap = snapList[idx % totalSnaps]
+        // Handle loop wrapping for better scaling
         const diffs = [
           Math.abs(snap - progress),
           Math.abs(snap - (progress - 1)),
@@ -44,7 +45,7 @@ export function Projects() {
         const diff = Math.min(...diffs)
         const scale = Math.max(0.8, 1 - diff * 0.4)
         slide.style.transform = `scale(${scale.toFixed(3)})`
-        slide.style.transition = "transform 300ms"
+        slide.style.transition = "transform 300ms ease-out"
         slide.style.willChange = "transform"
       })
     }
@@ -52,6 +53,7 @@ export function Projects() {
     applyScale()
     api.on("scroll", applyScale)
     api.on("reInit", applyScale)
+
     return () => {
       api.off("scroll", applyScale)
       api.off("reInit", applyScale)
@@ -98,21 +100,29 @@ export function Projects() {
         </div>
 
         <div className="grid grid-cols-1 gap-8">
-        <Carousel className="w-full" setApi={setApi} opts={{ align: "center", loop: true }} plugins={[
+        <Carousel className="w-full" setApi={setApi} opts={{
+          align: "center",
+          loop: true,
+          skipSnaps: false,
+          dragFree: false
+        }} plugins={[
               Autoplay({
                 delay: 2500,
+                stopOnInteraction: false,
+                stopOnMouseEnter: false,
+                stopOnFocusIn: false,
               }),
             ]}>
-        <CarouselContent className="">
+        <CarouselContent className="-ml-4">
           {projects.map((project, index) => (
-                        <CarouselItem key={index} className={"basis-[100%] sm:basis-[100%] md:basis-[60%] lg:basis-[50%] flex-shrink-0 md:pl-15 pl-20 transition-transform duration-300"}>
+                        <CarouselItem key={index} className={"pl-4 basis-[100%] sm:basis-[80%] md:basis-[60%] lg:basis-[50%] flex-shrink-0 transition-transform duration-300"}>
             <div className="group cursor-pointer ">
               <Link href={project.link} className="" aria-label={`View details of ${project.title}`}>
               <div className="overflow-hidden rounded-lg mb-4">
                 <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full md:h-[600px] h-[300px] object-cover rounded-4xl transition-transform duration-300 group-hover:scale-105"
+                  className="w-full md:h-[500px] h-[300px] object-cover rounded-4xl transition-transform duration-300 group-hover:scale-105"
                   priority
                 />
               </div>
@@ -124,6 +134,25 @@ export function Projects() {
             </div>
             </CarouselItem>
           ))}
+          {/* Duplicate first slide for seamless loop */}
+          <CarouselItem className={"pl-4 basis-[100%] sm:basis-[80%] md:basis-[60%] lg:basis-[50%] flex-shrink-0 transition-transform duration-300"}>
+            <div className="group cursor-pointer ">
+              <Link href={projects[0].link} className="" aria-label={`View details of ${projects[0].title}`}>
+              <div className="overflow-hidden rounded-lg mb-4">
+                <Image
+                  src={projects[0].image}
+                  alt={projects[0].title}
+                  className="w-full md:h-[500px] h-[300px] object-cover rounded-4xl transition-transform duration-300 group-hover:scale-105"
+                  priority
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-serif text-2xl md:text-3xl font-normal text-black mb-1 uppercase">{projects[0].title}</h3>
+                <p className="text-black text-lg uppercase">{projects[0].location}</p>
+              </div>
+              </Link>
+            </div>
+            </CarouselItem>
           </CarouselContent>
           </Carousel>
         </div>

@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Vollkorn, Barlow } from "next/font/google"
+import { Vollkorn, Inter } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/src/screen/components/header"
 import { Footer } from "@/src/screen/components/footer"
@@ -11,11 +11,11 @@ const vollkorn = Vollkorn({
   variable: "--font-vollkorn",
 })
 
-const barlow = Barlow({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
   display: "swap",
-  variable: "--font-barlow",
+  variable: "--font-inter",
 })
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${vollkorn.variable} ${barlow.variable} antialiased`}>
+    <html lang="en" className={`${vollkorn.variable} ${inter.variable} antialiased`}>
       <body>
         <Header />
         {children}

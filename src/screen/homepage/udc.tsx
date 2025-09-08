@@ -11,7 +11,7 @@ export function UdcSection() {
           <Image src={UdcImage} alt="About Meher Sra Designs" className="w-full md:h-[600px] h-[350px] rounded-2xl" />
           <div className="absolute rounded-2xl inset-0 bg-black/20 flex flex-col items-center justify-center px-6">
             <h4 className="text-white font-serif leading-[1.6] tracking-widest font-semibold text-center text-3xl md:text-5xl">Meher Sra Designs x UDC Homes</h4>
-            <p className="text-white font-medium md:text-3xl text-base tracking-wider text-center">All india Design 2025</p>
+            <p className="text-white font-medium md:text-3xl text-base tracking-wider text-center">At India Design 2025</p>
           <Link href="/udc-homes">
             <Button variant="outline" className="btn-sophie md:text-lg mt-12 text-center flex rounded-none md:px-12 px-6 mx-auto md:mx-0 py-6 bg-primary tracking-wider text-primary-foreground hover:bg-primary/90">
                VIEW THE SHOWCASE
