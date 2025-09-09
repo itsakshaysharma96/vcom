@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Banner4 from "@/public/banner/4.png"
+import Banner4 from "@/public/banner/a4.png"
 
 
 export function BannerSlider() {

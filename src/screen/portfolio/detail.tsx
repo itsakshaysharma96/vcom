@@ -25,7 +25,7 @@ export function Detail() {
     { title: "Luxury Apartment", location: "Marina, Dubai", image: proj3, link: "/luxury-apartment" },
     { title: "Holiday Home", location: "Panjim, Goa", image: proj4, link: "/holiday-home-panaji" },
     { title: "Legal chamber", location: "Golf Links, New Delhi", image: proj5, link: "/legal-chamber" },
-    { title: "Meher Sra Designs × UDC Homes", location: "At India Design 2025", image: proj6, link: "/udc-homes" },
+    { title: "UDC Homes", location: "At India Design 2025", image: proj6, link: "/udc-homes" },
   ]
 
   return (

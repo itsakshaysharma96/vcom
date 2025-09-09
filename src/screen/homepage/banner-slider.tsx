@@ -1,11 +1,19 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Banner1 from "@/public/banner/1.png"
-import Banner2 from "@/public/banner/2.png"
-import Banner3 from "@/public/banner/3.png"
-import Banner4 from "@/public/banner/4.png"
-import Banner5 from "@/public/banner/5.png"
+import Banner1 from "@/public/banner/a1.png"
+import Banner2 from "@/public/banner/a2.png"
+import Banner3 from "@/public/banner/a3.png"
+import Banner4 from "@/public/banner/a4.png"
+import Banner5 from "@/public/banner/a5.png"
+
+//banner for mobile
+import MobileBanner1 from "@/public/banner/m1.png"
+import MobileBanner2 from "@/public/banner/m2.png"
+import MobileBanner3 from "@/public/banner/m3.png"
+import MobileBanner4 from "@/public/banner/m4.png"
+import MobileBanner5 from "@/public/banner/m5.png"
+
 import Image from "next/image"
 
 
@@ -15,6 +23,7 @@ const banners = [
     title: "Luxury Living Spaces",
     subtitle: "Crafting timeless interiors with modern elegance",
     image: Banner1,
+    mobileBanner: MobileBanner1,
     cta: "Explore Our Work",
   },
   {
@@ -22,6 +31,7 @@ const banners = [
     title: "Boutique Workspaces",
     subtitle: "Designing productive environments that inspire creativity",
     image: Banner2,
+    mobileBanner: MobileBanner2,
     cta: "View Projects",
   },
   {
@@ -29,6 +39,7 @@ const banners = [
     title: "Holiday Retreats",
     subtitle: "Creating serene spaces for rest and rejuvenation",
     image: Banner3,
+    mobileBanner: MobileBanner3,
     cta: "Discover More",
   },
   {
@@ -36,6 +47,7 @@ const banners = [
     title: "Modern Kitchens",
     subtitle: "Innovative designs for culinary enthusiasts",
     image: Banner4,
+    mobileBanner: MobileBanner4,
     cta: "See Our Designs",
   },
   {
@@ -43,6 +55,7 @@ const banners = [
     title: "Elegant Bathrooms",
     subtitle: "Transforming everyday spaces into luxurious retreats",
     image: Banner5,
+    mobileBanner: MobileBanner5,
     cta: "Explore Options",
   },
 ]
@@ -71,7 +84,7 @@ export function BannerSlider() {
   }
 
   return (
-    <section className="relative md:h-[80vh] h-[26vh] overflow-hidden">
+    <section className="relative md:h-[80vh] h-[75vh] overflow-hidden">
       {/* Slides */}
       <div className="relative h-full">
         {banners.map((banner, index) => (
@@ -84,9 +97,22 @@ export function BannerSlider() {
             <Image
               src={banner.image}
               alt={banner.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hidden md:block"
+              priority={index === 0}
+            />
+            <Image
+              src={banner.mobileBanner}
+              alt={banner.title}
+              className="w-full h-full object-cover block md:hidden"
               priority
             />
+            <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-center px-4 md:px-0">
+              {/* <h2 className="text-white md:text-4xl text-xl font-serif font-medium mb-4 tracking-wide">{banner.title}</h2>
+              <p className="text-white md:text-lg text-sm mb-6 max-w-2xl">{banner.subtitle}</p> */}
+              {/* <button className="bg-white text-black px-6 py-2 rounded-full text-sm font-medium hover:bg-white/90 transition">
+                {banner.cta}
+              </button> */}
+            </div>
           </div>
         ))}
       </div>

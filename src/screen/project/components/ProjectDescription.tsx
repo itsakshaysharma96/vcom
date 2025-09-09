@@ -23,7 +23,7 @@ const ProjectDescription: React.FC<Props> = ({ block }) => {
             </h2>
           </div>
           <div>
-            <p className="text-lg text-black leading-[1.3]">
+            <p className="text-[14px] text-black leading-[1.3]">
               {description}
             </p>
           </div>

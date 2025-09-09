@@ -14,7 +14,7 @@ export function Footer() {
             <Image src={Logo} alt="Meher Sra Designs Logo" width={150} height={50} className="" />
           </div>
 
-          <div className="grid grid-cols-2 gap-8 text-lg">
+          <div className="grid grid-cols-2 gap-8 text-[14px]">
             <div className="space-y-2">
               <a href="#about" className="block hover:underline">
                 ABOUT
