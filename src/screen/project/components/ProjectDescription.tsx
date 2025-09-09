@@ -18,7 +18,7 @@ const ProjectDescription: React.FC<Props> = ({ block }) => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           <div>
-            <h2 className="text-3xl md:text-[28px] font-serif font-medium text-black leading-[1.5]">
+            <h2 className="text-2xl md:text-[28px] font-serif font-medium text-black leading-[1.5]">
               {title}
             </h2>
           </div>

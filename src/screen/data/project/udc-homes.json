@@ -12,7 +12,7 @@
         { "label": "Get started", "href": "#" },
         { "label": "Learn more", "href": "#", "variant": "ghost" }
       ],
-      "image": { "src": "/project/udc-homes/banner.png" }
+      "image": { "src": "/project/udc-homes/banner.png", "srcMobile": "/homepage/project/udc.png" }
     },
     {
       "type": "project-description",
@@ -70,22 +70,39 @@
       "title": "More Projects",
       "slides": [
         {
-          "title": "UDC Homes ",
-          "image": { "src": "/project/udc-homes/s2.png" },
-          "buttonText": "TAKE LOOK",
-          "buttonLink": "/udc-homes"
+          "title": "Holiday Homes",
+          "location": "Panajim, Goa",
+          "image": { "src": "/homepage/project/panjim.png" },
+          "buttonText": "TAKE A LOOK",
+          "buttonLink": "/holiday-home-panaji"
         },
         {
-          "title": "UDC Homes ",
-          "image": { "src": "/project/udc-homes/s2.png" },
-          "buttonText": "TAKE LOOK",
-          "buttonLink": "/udc-homes"
+          "title": "Law Office",
+          "location": "Golf Links, New Delhi",
+          "image": { "src": "/homepage/project/law.png" },
+          "buttonText": "TAKE A LOOK",
+          "buttonLink": "/law-office"
         },
         {
-          "title": "UDC Homes ",
-          "image": { "src": "/project/udc-homes/s2.png" },
-          "buttonText": "TAKE LOOK",
-          "buttonLink": "/udc-homes"
+          "title": "Holiday Home",
+          "location": "Marina, Dubai",
+          "image": { "src": "/homepage/project/dubai.png" },
+          "buttonText": "TAKE A LOOK",
+          "buttonLink": "/holiday-home-marina"
+        },
+        {
+          "title": "Luxury Apartment",
+          "location": "Marina, Dubai",
+          "image": { "src": "/homepage/project/luxury.png" },
+          "buttonText": "TAKE A LOOK",
+          "buttonLink": "/luxury-apartment"
+        },
+        {
+          "title": "Legal Chamber",
+          "location": "Golf Links, New Delhi",
+          "image": { "src": "/homepage/project/legal.png" },
+          "buttonText": "TAKE A LOOK",
+          "buttonLink": "/legal-chamber"
         }
       ]
     }

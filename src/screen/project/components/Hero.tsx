@@ -12,7 +12,7 @@ export type HeroBlock = {
   eyebrow?: string
   title: string
   subtitle?: string
-  image?: { src: string; alt?: string }
+  image?: { src: string; srcMobile: string; alt?: string }
   actions?: HeroAction[]
 }
 
@@ -27,13 +27,16 @@ const Hero: React.FC<Props> = ({ block }) => {
       <div className="mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-1 items-center relative">
           {image?.src ? (
-            <Image
+            <><Image
               src={image.src}
-              alt={image.alt || title}
-              width={1920}
-              height={900}
-              className="w-full h-[320px] md:h-[600px] object-cover"
+              alt={image?.alt || title}
+              className="w-full h-[500px] object-cover md:block hidden"
+              width={1200}
+              height={500}
+              priority
             />
+            <Image src={image.srcMobile} alt={image?.alt || title} className="w-full h-[360px] object-cover md:hidden block" width={600} height={500} priority />
+            </>
           ) : null}
           <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center px-6 text-center">
             {/* {eyebrow ? (

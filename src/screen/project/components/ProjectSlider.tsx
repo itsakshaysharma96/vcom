@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export type ProjectSlide = {
   title: string
+  location: string
   image: { src: string; alt?: string }
   buttonText?: string
   buttonLink?: string
@@ -81,13 +82,14 @@ const ProjectSlider: React.FC<Props> = ({ block }) => {
                     alt={slide.image.alt || slide.title}
                     width={600}
                     height={400}
-                    className="w-full h-[400px] object-cover"
+                    className="w-full h-[450px] object-cover"
                   />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                     <div className="text-center text-white">
-                      <h3 className="text-[25px] md:text-[32px] font-serif font-medium mb-3">
+                      <h3 className="text-[28px] md:text-[32px] font-serif font-medium leading-[1.2]">
                         {slide.title}
                       </h3>
+                      <p className="mb-6">{slide.location}</p>
                       {slide.buttonText && (
                         <Button
                           asChild

@@ -7,12 +7,12 @@
       "type": "hero",
       "eyebrow": "",
       "title": "Law Office",
-      "subtitle": "Golf Links",
+      "subtitle": "Golf Links, New Delhi",
       "actions": [
         { "label": "Get started", "href": "#" },
         { "label": "Learn more", "href": "#", "variant": "ghost" }
       ],
-      "image": { "src": "/project/law-office/banner.png" }
+      "image": { "src": "/project/law-office/banner.png", "srcMobile": "/homepage/project/law.png" }
     },
     {
       "type": "project-description",
@@ -70,22 +70,39 @@
       "title": "More Projects",
       "slides": [
         {
-          "title": "Law Office",
-          "image": { "src": "/project/law-office/s1.png" },
-          "buttonText": "TAKE LOOK",
-          "buttonLink": "/law-office"
+          "title": "Holiday Homes",
+          "location": "Panajim, Goa",
+          "image": { "src": "/homepage/project/panjim.png" },
+          "buttonText": "TAKE A LOOK",
+          "buttonLink": "/holiday-home-panaji"
         },
         {
           "title": "Holiday Home",
-          "image": { "src": "/project/law-office/s3.png" },
-          "buttonText": "TAKE LOOK",
+          "location": "Marina, Dubai",
+          "image": { "src": "/homepage/project/dubai.png" },
+          "buttonText": "TAKE A LOOK",
           "buttonLink": "/holiday-home-marina"
         },
         {
           "title": "Luxury Apartment",
-          "image": { "src": "/project/law-office/s2.png" },
-          "buttonText": "TAKE LOOK",
+          "location": "Marina, Dubai",
+          "image": { "src": "/homepage/project/luxury.png" },
+          "buttonText": "TAKE A LOOK",
           "buttonLink": "/luxury-apartment"
+        },
+        {
+          "title": "Legal Chamber",
+          "location": "Golf Links, New Delhi",
+          "image": { "src": "/homepage/project/legal.png" },
+          "buttonText": "TAKE A LOOK",
+          "buttonLink": "/legal-chamber"
+        },
+        {
+          "title": "MSD x UDC Homes",
+          "location": "At India Design 2025",
+          "image": { "src": "/homepage/project/udc.png" },
+          "buttonText": "TAKE A LOOK",
+          "buttonLink": "/udc-homes"
         }
       ]
     }

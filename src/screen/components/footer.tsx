@@ -9,13 +9,13 @@ export function Footer() {
   return (
     <footer className="w-full px-0 bg-background text-black">
       <div className="max-w-7xl mx-auto">
-        <div className="md:flex items-start justify-between gap-12 py-8 px-6 md:px-0">
-          <div className="">
+        <div className="md:flex items-start justify-between gap-12 py-6 px-6 md:px-0">
+          <div className="mt-3 mb-8 md:mb-0">
             <Image src={Logo} alt="Meher Sra Designs Logo" width={150} height={50} className="" />
           </div>
 
           <div className="grid grid-cols-2 gap-8 text-[14px]">
-            <div className="space-y-2">
+            <div className="space-y-3">
               <a href="#about" className="block hover:underline">
                 ABOUT
               </a>
@@ -29,7 +29,7 @@ export function Footer() {
                 PRIVACY POLICY
               </Link>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-3">
               <Link href="/#bts" className="block hover:underline">
                 #BTS
               </Link>
@@ -55,11 +55,11 @@ export function Footer() {
                 </Link>
             </div>
             </div>
-                              <p className="pt-4">INFO@MEHERSRADESIGNS.COM</p>
+                              <p className="pt-4 text-[14px]">INFO@MEHERSRADESIGNS.COM</p>
 
           </div>
 
-          <p className="pt-4">COPYRIGHT &copy; MEHER SRA DESIGNS 2025</p>
+          <p className="pt-4 text-[14px]">COPYRIGHT &copy; MEHER SRA DESIGNS 2025</p>
 
 
         </div>

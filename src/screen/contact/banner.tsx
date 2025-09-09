@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Banner5 from "@/public/banner/a5.png"
+import Banner5Mobile from "@/public/banner/m3.png"
 
 
 export function BannerSlider() {
@@ -12,9 +13,16 @@ export function BannerSlider() {
           <Image
             src={Banner5}
             alt="Contact Banner"
-            width={1920}
-            height={900}
-            className="w-full h-[220px] md:h-[400px] object-cover"
+            width={1200}
+            height={400}
+            className="w-full h-[400px] md:h-[400px] object-cover md:block hidden"
+          />
+          <Image
+            src={Banner5Mobile}
+            alt="Contact Banner Mobile"
+            width={600}
+            height={400}
+            className="w-full h-[70vh] object-cover md:hidden block"
           />
         <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center px-6 text-center">
 

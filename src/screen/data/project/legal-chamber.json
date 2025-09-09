@@ -12,7 +12,7 @@
         { "label": "Get started", "href": "#" },
         { "label": "Learn more", "href": "#", "variant": "ghost" }
       ],
-      "image": { "src": "/project/legal-chamber/banner.png" }
+      "image": { "src": "/project/legal-chamber/banner.png", "srcMobile": "/homepage/project/legal.png" }
     },
     {
       "type": "project-description",
@@ -70,22 +70,39 @@
       "title": "More Projects",
       "slides": [
         {
-          "title": "Legal Chamber",
-          "image": { "src": "/project/legal-chamber/s1.png" },
-          "buttonText": "TAKE LOOK",
-          "buttonLink": "/legal-chamber"
+          "title": "Holiday Homes",
+          "location": "Panajim, Goa",
+          "image": { "src": "/homepage/project/panjim.png" },
+          "buttonText": "TAKE A LOOK",
+          "buttonLink": "/holiday-home-panaji"
+        },
+        {
+          "title": "Law Office",
+          "location": "Golf Links, New Delhi",
+          "image": { "src": "/homepage/project/law.png" },
+          "buttonText": "TAKE A LOOK",
+          "buttonLink": "/law-office"
         },
         {
           "title": "Holiday Home",
-          "image": { "src": "/project/legal-chamber/s3.png" },
-          "buttonText": "TAKE LOOK",
+          "location": "Marina, Dubai",
+          "image": { "src": "/homepage/project/dubai.png" },
+          "buttonText": "TAKE A LOOK",
           "buttonLink": "/holiday-home-marina"
         },
         {
           "title": "Luxury Apartment",
-          "image": { "src": "/project/legal-chamber/s2.png" },
-          "buttonText": "TAKE LOOK",
+          "location": "Marina, Dubai",
+          "image": { "src": "/homepage/project/luxury.png" },
+          "buttonText": "TAKE A LOOK",
           "buttonLink": "/luxury-apartment"
+        },
+        {
+          "title": "MSD x UDC Homes",
+          "location": "At India Design 2025",
+          "image": { "src": "/homepage/project/udc.png" },
+          "buttonText": "TAKE A LOOK",
+          "buttonLink": "/udc-homes"
         }
       ]
     }

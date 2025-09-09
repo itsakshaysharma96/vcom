@@ -25,7 +25,7 @@ export function Detail() {
     { title: "Luxury Apartment", location: "Marina, Dubai", image: proj3, link: "/luxury-apartment" },
     { title: "Holiday Home", location: "Panjim, Goa", image: proj4, link: "/holiday-home-panaji" },
     { title: "Legal chamber", location: "Golf Links, New Delhi", image: proj5, link: "/legal-chamber" },
-    { title: "UDC Homes", location: "At India Design 2025", image: proj6, link: "/udc-homes" },
+    { title: "MSD x UDC Homes", location: "At India Design 2025", image: proj6, link: "/udc-homes" },
   ]
 
   return (
@@ -42,7 +42,7 @@ export function Detail() {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-[260px] md:h-[420px] object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  className="w-full h-[350px] md:h-[420px] object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   priority={idx < 2}
                 />
 

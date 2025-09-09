@@ -90,6 +90,96 @@ export function Projects() {
       image:  proj5 ,
       link: "/legal-chamber"
     },
+    {
+      title: "Holiday Home",
+      location: "Marina, Dubai",
+      image: proj1,
+      link: "/holiday-home-marina"
+    },
+    {
+      title: "Law Office",
+      location: "Golf Links, New Delhi",
+      image: proj2,
+      link: "/law-office"
+    },
+    {
+      title: "Luxury Apartment",
+      location: "Marina, Dubai",
+      image:  proj3,
+      link: "/luxury-apartment"
+    },
+    {
+      title: "Holiday Home",
+      location: "Panjim, Goa",
+      image:  proj4,
+      link: "/holiday-home-panaji"
+    },
+    {
+      title: "Legal chamber ",
+      location: "Golf Links, New Delhi",
+      image:  proj5 ,
+      link: "/legal-chamber"
+    },
+    {
+      title: "Holiday Home",
+      location: "Marina, Dubai",
+      image: proj1,
+      link: "/holiday-home-marina"
+    },
+    {
+      title: "Law Office",
+      location: "Golf Links, New Delhi",
+      image: proj2,
+      link: "/law-office"
+    },
+    {
+      title: "Luxury Apartment",
+      location: "Marina, Dubai",
+      image:  proj3,
+      link: "/luxury-apartment"
+    },
+    {
+      title: "Holiday Home",
+      location: "Panjim, Goa",
+      image:  proj4,
+      link: "/holiday-home-panaji"
+    },
+    {
+      title: "Legal chamber ",
+      location: "Golf Links, New Delhi",
+      image:  proj5 ,
+      link: "/legal-chamber"
+    },
+    {
+      title: "Holiday Home",
+      location: "Marina, Dubai",
+      image: proj1,
+      link: "/holiday-home-marina"
+    },
+    {
+      title: "Law Office",
+      location: "Golf Links, New Delhi",
+      image: proj2,
+      link: "/law-office"
+    },
+    {
+      title: "Luxury Apartment",
+      location: "Marina, Dubai",
+      image:  proj3,
+      link: "/luxury-apartment"
+    },
+    {
+      title: "Holiday Home",
+      location: "Panjim, Goa",
+      image:  proj4,
+      link: "/holiday-home-panaji"
+    },
+    {
+      title: "Legal chamber ",
+      location: "Golf Links, New Delhi",
+      image:  proj5 ,
+      link: "/legal-chamber"
+    },
   ]
 
   return (

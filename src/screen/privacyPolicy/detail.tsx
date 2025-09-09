@@ -1,11 +1,11 @@
 
 export function Detail() {
   return (
-    <section id="about" className="w-full px-6 pt-16">
+    <section id="about" className="w-full px-6 md:py-16 py-10">
     <div className="max-w-7xl mx-auto">
       <div className="grid grid-cols-1 items-end">
 
-        <div className="space-y-6 md:px-16 md:pb-16 md:mt-0 mt-8 text-center md:text-left">
+        <div className="space-y-6 md:px-16 md:mt-0 text-center md:text-left">
           <div>
             {/* <p className=" text-xl lg:text-xl text-black mb-6">THE COMPANY</p> */}
             <h2 className="font-serif text-3xl lg:text-4xl font-medium text-black mb-6 tracking-wide lg:tracking-widest leading-[1.4]">

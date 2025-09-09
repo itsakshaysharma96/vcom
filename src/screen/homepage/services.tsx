@@ -67,14 +67,14 @@ export function Services() {
 											{service.number}
 										</div>
 										<div className="flex-1">
-											<h3 className=" md:text-[25px] font-normal tracking-wider text-black">
+											<h3 className=" md:text-[25px] text-[15px] md:font-normal font-semibold tracking-wider text-black">
 												{service.title}
 											</h3>
 										</div>
 									</div>
 								</div>
 							</AccordionTrigger>
-							<AccordionContent className="md:pl-[43rem] pr-8 pb-4">
+							<AccordionContent className="md:pl-[43rem] pl-10 md:pr-8 pb-4">
 								<p className="text-black leading-relaxed md:text-xl text-base">
 									{service.description}
 								</p>
