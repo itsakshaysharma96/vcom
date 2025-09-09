@@ -17,31 +17,31 @@ export function Services() {
 	const services = [
 		{
 			number: "01",
-			title: "Is Fine",
+			title: "Interior Architecture & Design",
       icon:Accordion1,
 			description:
-				"Complete space planning and architectural interior solutions tailored to your lifestyle and functional needs. We create cohesive environments that seamlessly blend form and function.",
+				"Complete space planning and tailored interior solutions that seamlessly balance form and function, creating cohesive environments designed around your lifestyle and needs.",
 		},
 		{
 			number: "02",
 			title: "FF&E Design",
        icon:Accordion2,
 			description:
-				"Curated selection of furniture, fixtures, and equipment that reflects your personal style. From custom pieces to carefully sourced vintage finds, every element is chosen with intention.",
+				"Bespoke furniture, finishes, and accessories thoughtfully curated to reflect your aesthetic, adding depth, character, and timeless elegance to every space.",
 		},
 		{
 			number: "03",
 			title: "Procurement",
        icon:Accordion3,
 			description:
-				"Global network of artisans, manufacturers, and suppliers ensures access to unique materials and furnishings. We handle all logistics from sourcing to delivery.",
+				"End-to-end sourcing of premium materials, furnishings, and décor from trusted global partners, managed with precision to ensure quality, timeliness, and alignment with your design vision.",
 		},
 		{
 			number: "04",
 			title: "Delivery & Installation",
        icon:Accordion4,
 			description:
-				"Comprehensive project management from initial concept through final installation. Our experienced team coordinates all trades and ensures flawless execution.",
+				"Meticulous delivery and expert installation of every element, from architectural features to final touches, leaving your home perfectly styled and ready to live in.",
 		},
 	];
 

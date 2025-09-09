@@ -33,7 +33,7 @@ export function Hero() {
               </h2>
             </div>
 
-            <div className="space-y-4 text-black leading-relaxed text-base">
+            <div className="space-y-4 text-black leading-relaxed text-[14px]">
               <p>
                 Meher Sra Designs is a New Delhi-based interior design studio led by Meher Rohatgi - an interior
                 designer with a global perspective and a deeply personal approach.

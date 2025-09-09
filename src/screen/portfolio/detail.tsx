@@ -8,6 +8,8 @@ import proj2 from "@/public/homepage/project/law.png"
 import proj3 from "@/public/homepage/project/luxury.png"
 import proj4 from "@/public/homepage/project/panjim.png"
 import proj5 from "@/public/homepage/project/legal.png"
+import proj6 from "@/public/homepage/project/udc.png"
+
 
 type PortfolioItem = {
   title: string
@@ -23,7 +25,7 @@ export function Detail() {
     { title: "Luxury Apartment", location: "Marina, Dubai", image: proj3, link: "/luxury-apartment" },
     { title: "Holiday Home", location: "Panjim, Goa", image: proj4, link: "/holiday-home-panaji" },
     { title: "Legal chamber", location: "Golf Links, New Delhi", image: proj5, link: "/legal-chamber" },
-    { title: "Meher Sra Designs × UDC Homes", location: "At India Design 2025", image: proj1, link: "/udc-homes" },
+    { title: "Meher Sra Designs × UDC Homes", location: "At India Design 2025", image: proj6, link: "/udc-homes" },
   ]
 
   return (

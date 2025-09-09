@@ -196,3 +196,8 @@
     @apply bg-background text-foreground font-sans;
   }
 }
+
+
+.text-base{
+  font-size: 14px;
+}
