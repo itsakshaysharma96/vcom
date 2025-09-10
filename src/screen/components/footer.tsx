@@ -16,9 +16,9 @@ export function Footer() {
 
           <div className="grid grid-cols-2 gap-8 text-[14px]">
             <div className="space-y-3">
-              <a href="#about" className="block hover:underline">
+              <Link href="/about-us" className="block hover:underline">
                 ABOUT
-              </a>
+              </Link>
               <a href="#services" className="block hover:underline">
                 OUR SERVICES
               </a>
@@ -39,6 +39,10 @@ export function Footer() {
               <Link href="/terms-conditions" className="block hover:underline">
                 TERMS & CONDITIONS
               </Link>
+              <Link href="/legal-policy" className="block hover:underline">
+                LEGAL POLICY
+              </Link>
+
             </div>
           </div>
 

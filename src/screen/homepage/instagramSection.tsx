@@ -5,6 +5,7 @@ import insta3 from "@/public/homepage/insta/3.png"
 import insta4 from "@/public/homepage/insta/4.png"
 import insta5 from "@/public/homepage/insta/5.png"
 import insta6 from "@/public/homepage/insta/6.png"
+import InstaFeed from "@/src/screen/homepage/_components/InstaFeed";
 
 
 export function InstagramSection() {
@@ -36,6 +37,7 @@ export function InstagramSection() {
 
           </div>
 
+          <InstaFeed />
 
         </div>
       </div>

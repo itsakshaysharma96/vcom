@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import AboutImage from "@/public/homepage/about.png"
 import Image from "next/image"
 import { useInView } from "@/lib/useInView"
+import Link from "next/link"
 
 export function Hero() {
   const { ref, isInView } = useInView<HTMLImageElement>()
@@ -49,9 +50,9 @@ export function Hero() {
               </p>
             </div>
 
-            <Button variant="outline" className="btn-sophie md:text-lg mt-12 text-center flex rounded-none md:px-12 px-6 mx-auto md:mx-0 py-6 bg-primary tracking-wider text-primary-foreground hover:bg-primary/90">
+            <Link href="/about-us" className="btn-sophie md:text-lg mt-12 text-center inline-flex rounded-none md:px-12 px-6 mx-auto md:mx-0 py-3 bg-primary tracking-wider text-primary-foreground hover:bg-primary/90">
              READ MORE
-            </Button>
+            </Link>
           </div>
         </div>
       </div>
