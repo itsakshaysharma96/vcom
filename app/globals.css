@@ -215,3 +215,14 @@
   display: flex;
   animation: marquee 6s linear infinite;
 }
+
+
+.eapps-instagram-feed-header-container, .eapps-widget-toolbar,
+.eapps-instagram-feed-posts-grid-load-more-container{
+  display: none !important;
+}
+
+/* Hide Elfsight credit link inside the specific Instagram feed instance */
+body #eapps-instagram-feed-2 a[href="https://elfsight.com/instagram-feed-instashow/?utm_source=websites&utm_medium=clients&utm_content=instashow&utm_term=localhost&utm_campaign=free-widget"]{
+  display: none !important;
+}
