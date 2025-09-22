@@ -16,8 +16,8 @@ export function Contact() {
                 <Input placeholder="First Name" className="bg-background/70 py-8 text-base rounded" />
                 <Input placeholder="Last Name" className="bg-background/70 py-8 text-base rounded" />
               </div>
-              <Input placeholder="Email Address" className="bg-background/70 py-8 text-base rounded" />
-              <Input placeholder="Reason for Enquiry" className="bg-background/70 py-8 text-base rounded" />
+              <Input placeholder="Email Address" type="email" className="bg-background/70 py-8 text-base rounded" />
+              <Input placeholder="Phone Number" type="tel" className="bg-background/70 py-8 text-base rounded" />
               <Textarea placeholder="Message" rows={12} className="bg-background/70 rounded text-base resize-none h-[6rem]" />
 
               <div className="flex items-center justify-center space-x-2">

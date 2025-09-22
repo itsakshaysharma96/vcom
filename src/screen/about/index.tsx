@@ -1,5 +1,7 @@
 import { BannerSlider } from "./banner"
-import Clients from "./clients"
+import Heading from "./heading"
+import HeadingTwo from "./heading2"
+
 import Description from "./description"
 import Gallery from "./gallery"
 import Slider from "./slider"
@@ -10,8 +12,10 @@ export function AboutMain() {
       <BannerSlider />
       <Description />
       <Slider />
+      <Heading />
       <Gallery />
-      <Clients />
+      <HeadingTwo />
+
     </div>
   )
 }

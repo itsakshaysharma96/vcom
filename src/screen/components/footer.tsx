@@ -19,9 +19,9 @@ export function Footer() {
               <Link href="/about-us" className="block hover:underline">
                 ABOUT
               </Link>
-              <a href="#services" className="block hover:underline">
+              <Link href="/our-services" className="block hover:underline">
                 OUR SERVICES
-              </a>
+              </Link>
               <Link href="/portfolio" className="block hover:underline">
                 PORTFOLIO
               </Link>

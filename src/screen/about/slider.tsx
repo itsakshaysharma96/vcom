@@ -47,11 +47,11 @@ const Slider = () => {
     <section className="w-full pb-16 md:pb-16">
       <div className="overflow-hidden">
         {/* Animated track */}
-        <div className="flex animate-marquee">
+        <div className="flex animate-marquee items-center ">
           {[...slides, ...slides].map((slide, idx) => (
             <div
               key={idx}
-              className="flex-shrink-0 w-[300px] md:w-[500px] px-2"
+              className="flex-shrink-0 w-[300px] px-2"
             >
               <div className="relative rounded-lg overflow-hidden">
                 <Image
@@ -59,7 +59,7 @@ const Slider = () => {
                   alt={slide.alt}
                   width={600}
                   height={400}
-                  className="w-full h-[400px] md:h-[450px] object-cover"
+                  className="w-full h-[400px] md:h-auto object-contain"
                 />
               </div>
             </div>

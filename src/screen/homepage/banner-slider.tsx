@@ -16,6 +16,9 @@ import MobileBanner5 from "@/public/banner/m5.png"
 
 import Image from "next/image"
 
+import WhiteLogo from "@/public/white-logo.png"
+
+
 
 const banners = [
   {
@@ -112,6 +115,9 @@ export function BannerSlider() {
               {/* <button className="bg-white text-black px-6 py-2 rounded-full text-sm font-medium hover:bg-white/90 transition">
                 {banner.cta}
               </button> */}
+              <div className="flex flex-col items-center ">
+                <Image src={WhiteLogo} alt="Sophie" className="md:w-[40rem] w-[30rem] mb-4 hover:opacity-50 inline-block " />
+              </div>
             </div>
           </div>
         ))}

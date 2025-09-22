@@ -39,9 +39,9 @@ export function Header() {
           <Link href="/about-us" className="text-[16px] font-medium text-black hover:text-primary transition-colors">
             ABOUT
           </Link>
-          <a href="#services" className="text-[16px] font-medium text-black hover:text-primary transition-colors">
+          <Link href="/our-services" className="text-[16px] font-medium text-black hover:text-primary transition-colors">
             OUR SERVICES
-          </a>
+          </Link>
 
           <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
             <Image src={Logo} alt="logo" width={20} height={20} className="inline-block mx-auto md:w-[70px] w-[50px] object-contain" />
@@ -58,20 +58,20 @@ export function Header() {
         {isOpen ? (
           <div className="absolute right-0 top-full mt-3 w-56 rounded-md border border-gray-200 bg-white shadow-lg md:hidden z-50">
             <div className="py-2">
-              <a
-                href="#about"
+              <Link
+                href="/about-us"
                 className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
                 About
-              </a>
-              <a
-                href="#services"
+              </Link>
+              <Link
+                href="/our-services"
                 className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
                 Our Services
-              </a>
+              </Link>
               <Link
                 href="/portfolio"
                 className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-50"
