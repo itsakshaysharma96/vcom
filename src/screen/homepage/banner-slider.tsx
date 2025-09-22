@@ -116,7 +116,7 @@ export function BannerSlider() {
                 {banner.cta}
               </button> */}
               <div className="flex flex-col items-center ">
-                <Image src={WhiteLogo} alt="Sophie" className="md:w-[40rem] w-[30rem] mb-4 hover:opacity-50 inline-block " />
+                <Image src={WhiteLogo} alt="Sophie" className="md:w-[40rem] w-[30rem] mb-4 inline-block opacity-100 transition-opacity duration-300 ease-in-out hover:opacity-50 z-50" />
               </div>
             </div>
           </div>

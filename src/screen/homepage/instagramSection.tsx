@@ -1,11 +1,4 @@
-import Image from "next/image";
-import insta1 from "@/public/homepage/insta/1.png"
-import insta2 from "@/public/homepage/insta/2.png"
-import insta3 from "@/public/homepage/insta/3.png"
-import insta4 from "@/public/homepage/insta/4.png"
-import insta5 from "@/public/homepage/insta/5.png"
-import insta6 from "@/public/homepage/insta/6.png"
-import InstaFeed from "@/src/screen/homepage/_components/InstaFeed";
+// import InstaFeed from "@/src/screen/homepage/_components/InstaFeed";
 
 
 export function InstagramSection() {
@@ -28,19 +21,11 @@ export function InstagramSection() {
 
           {/* instagram */}
           <div className="grid grid-cols-1 gap-4 w-full">
-
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div className="elfsight-app-18d0606b-bca0-4562-aea8-bda84b017f61" data-elfsight-app-lazy></div>
-            {/* <a href="https://www.instagram.com/reel/DNS_1QgybMp/?utm_source=ig_web_copy_link&igsh=MWJzbGh4ZnpjZHU1Zw==" target="_blank"><Image src={insta1} width={300} height={500} alt="instagram1" className="object-cover" /></a>
-            <a href="https://www.instagram.com/reel/DM-qnnWS94f/?utm_source=ig_web_copy_link&igsh=MWhpemh2NTJtc2VubQ==" target="_blank"><Image src={insta2} width={300} height={500} alt="instagram1" className="object-cover" /></a>
-            <a href="https://www.instagram.com/reel/DMxu9KMyyRn/?utm_source=ig_web_copy_link&igsh=MTJtbTdqNXk5OGY5ag==" target="_blank"><Image src={insta3} width={300} height={500} alt="instagram1" className="object-cover" /></a>
-            <a href="https://www.instagram.com/reel/DMkzkruJttx/?utm_source=ig_web_copy_link&igsh=NHJ1YjZrbGo1bngw" target="_blank"><Image src={insta4} width={300} height={500} alt="instagram1" className="object-cover" /></a>
-            <a href="https://www.instagram.com/reel/DMSo0ZAyga-/?utm_source=ig_web_copy_link&igsh=c3FyMml0bnlnaTNh" target="_blank"><Image src={insta5} width={300} height={500} alt="instagram1" className="object-cover" /></a>
-            <a href="https://www.instagram.com/reel/DLxTRtWy4CX/?utm_source=ig_web_copy_link&igsh=MTEyMnlwdTh3d2NndQ==" target="_blank"><Image src={insta6} width={300} height={500} alt="instagram1" className="object-cover" /></a> */}
-
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div className="elfsight-app-18d0606b-bca0-4562-aea8-bda84b017f61" data-elfsight-app-lazy></div>
           </div>
 
-          <InstaFeed />
+          {/* <InstaFeed /> */}
 
         </div>
       </div>
