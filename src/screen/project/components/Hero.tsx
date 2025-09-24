@@ -30,7 +30,7 @@ const Hero: React.FC<Props> = ({ block }) => {
             <><Image
               src={image.src}
               alt={image?.alt || title}
-              className="w-full h-[500px] object-cover md:block hidden"
+              className="w-full h-[700px] object-cover md:block hidden"
               width={1200}
               height={500}
               priority

@@ -28,14 +28,14 @@ const OurProcess = () => {
           </div>
           <div className='mt-6 md:mt-0'>
             <p className="md:text-[22px] text-black md:text-right leading-[1.8] tracking-wider">
-            Whenever somebody hovers on this section - <br /> that box should change the color to the brown color that we have
+            A clear, five‑step journey that keeps your project moving <br /> smoothly while preserving design integrity at every stage.
             </p>
           </div>
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-5 gap-6 mt-8'>
           {process.map((process) => (
-          <div key={process.count} className="md:mt-12 border border-[#967A65] rounded-xl p-5">
+          <div key={process.count} className="md:mt-12 border border-[#967A65] rounded-xl p-5 hover:bg-[#EFE3DB]">
             <p className='text-black text-[23px] mb-6'>{process.count}</p>
             <h3 className="text-2xl md:text-[25px] font-serif font-semibold text-black leading-[1.3] tracking-wider">{process.title}</h3>
             <p className="text-[17px] text-black mt-6 leading-[1.8] tracking-wider">{process.description}</p>

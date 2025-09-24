@@ -15,7 +15,7 @@ export function BannerSlider() {
             alt="terms conditions Banner"
             width={1200}
             height={400}
-            className="w-full h-[400px] md:h-[400px] object-cover md:block hidden"
+            className="w-full h-[400px] md:h-[700px] object-cover md:block hidden"
           />
           <Image
             src={Banner3Banner}
