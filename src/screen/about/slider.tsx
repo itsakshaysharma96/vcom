@@ -23,37 +23,20 @@ const Slider = () => {
     { src: Banner4, alt: "Project 4", mobile: MobileBanner4 },
     { src: Banner5, alt: "Project 5", mobile: MobileBanner5 },
     { src: Banner6, alt: "Project 6", mobile: MobileBanner5 },
-    { src: Banner1, alt: "Project 1", mobile: MobileBanner1 },
-    { src: Banner2, alt: "Project 2", mobile: MobileBanner2 },
-    { src: Banner3, alt: "Project 3", mobile: MobileBanner3 },
-    { src: Banner4, alt: "Project 4", mobile: MobileBanner4 },
-    { src: Banner5, alt: "Project 5", mobile: MobileBanner5 },
-    { src: Banner6, alt: "Project 6", mobile: MobileBanner5 },
-    { src: Banner1, alt: "Project 1", mobile: MobileBanner1 },
-    { src: Banner2, alt: "Project 2", mobile: MobileBanner2 },
-    { src: Banner3, alt: "Project 3", mobile: MobileBanner3 },
-    { src: Banner4, alt: "Project 4", mobile: MobileBanner4 },
-    { src: Banner5, alt: "Project 5", mobile: MobileBanner5 },
-    { src: Banner6, alt: "Project 6", mobile: MobileBanner5 },
-    { src: Banner1, alt: "Project 1", mobile: MobileBanner1 },
-    { src: Banner2, alt: "Project 2", mobile: MobileBanner2 },
-    { src: Banner3, alt: "Project 3", mobile: MobileBanner3 },
-    { src: Banner4, alt: "Project 4", mobile: MobileBanner4 },
-    { src: Banner5, alt: "Project 5", mobile: MobileBanner5 },
-    { src: Banner6, alt: "Project 6", mobile: MobileBanner5 },
+
   ]
 
   return (
     <section className="w-full pb-16 md:pb-16">
       <div className="overflow-hidden">
         {/* Animated track */}
-        <div className="flex animate-marquee items-center ">
+        <div className="flex animate-marquees items-center -ml-25">
           {[...slides, ...slides].map((slide, idx) => (
             <div
               key={idx}
-              className="flex-shrink-0 w-[300px] px-2"
+              className="flex-shrink-0 w-[350px] px-4"
             >
-              <div className="relative rounded-lg overflow-hidden">
+              <div className="relative rounded-none overflow-hidden">
                 <Image
                   src={slide.src}
                   alt={slide.alt}

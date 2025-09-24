@@ -53,7 +53,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="w-full px-6 md:py-16 py-10 bg-white">
+    <section id="contactUs" className="w-full px-6 md:py-16 py-10 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 gap-12">
           <div>

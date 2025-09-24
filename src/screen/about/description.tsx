@@ -17,8 +17,8 @@ Design.
           <div className='mt-6 md:mt-0'>
             <p className="text-[18px] text-black md:text-right leading-[2]">
             We craft timeless spaces that reflect individuality and purpose.<br/>
-            Our expertise spans luxury residences, corporate offices, and boutique hospitality.<br/>
-            Precision, innovation, and elegance define every project we deliver.
+            Precision, innovation, and elegance define every project we deliver.<br/>
+            Our expertise spans luxury residences, corporate offices, and boutique hospitality.
             </p>
           </div>
         </div>

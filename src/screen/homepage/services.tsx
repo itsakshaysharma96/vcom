@@ -11,6 +11,7 @@ import  Accordion2 from "@/public/homepage/services/accordian2.svg"; // Replace 
 import  Accordion3 from "@/public/homepage/services/Accordian3.svg"; // Replace with your actual image path
 import  Accordion4 from "@/public/homepage/services/Accordian4.svg"; // Replace with your actual image path
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 
 export function Services() {
@@ -83,9 +84,9 @@ export function Services() {
 					))}
 				</Accordion>
 </div>
-        <Button variant="outline" className="btn-sophie md:text-lg mt-12 text-center flex uppercase rounded-none md:px-12 px-6 mx-auto md:mx-0 py-6 bg-primary tracking-wider text-primary-foreground hover:bg-primary/90">
+        <Link href="#contactUs" className=" btn-sophie md:text-lg mt-12 text-center inline-flex uppercase rounded-none md:px-12 px-6 mx-auto md:mx-0 py-4 bg-primary tracking-wider text-primary-foreground hover:bg-primary/90">
              Discuss My Project
-            </Button>
+            </Link>
 			</div>
 		</section>
 	);

@@ -36,8 +36,7 @@ export function Hero() {
 
             <div className="space-y-4 text-black leading-relaxed text-[14px]">
               <p>
-                Meher Sra Designs is a New Delhi-based interior design studio led by Meher Rohatgi - an interior
-                designer with a global perspective and a deeply personal approach.
+              Meher Sra Designs is a New Delhi - based interior design studio led by Meher Sra Rohatgi - an interior designer with a global perspective and a deeply personal approach.
               </p>
               <p>
                 Rooted in craftsmanship, emotion, and collaboration, the studio creates refined, timeless interiors that
