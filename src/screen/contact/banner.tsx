@@ -18,7 +18,7 @@ export function BannerSlider() {
             className="w-full h-[400px] md:h-[700px] object-cover md:block hidden"
           />
           <Image
-            src={Banner5Mobile}
+            src={Banner5}
             alt="Contact Banner Mobile"
             width={600}
             height={400}
