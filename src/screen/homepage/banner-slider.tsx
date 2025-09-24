@@ -1,11 +1,11 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Banner1 from "@/public/banner/a1.png"
-import Banner2 from "@/public/banner/a2.png"
-import Banner3 from "@/public/banner/a3.png"
-import Banner4 from "@/public/banner/a4.png"
-import Banner5 from "@/public/banner/a5.png"
+import Banner1 from "@/public/commonBanners/2.png"
+import Banner2 from "@/public/commonBanners/5.png"
+import Banner3 from "@/public/commonBanners/1.png"
+import Banner4 from "@/public/commonBanners/10.png"
+import Banner5 from "@/public/commonBanners/11.png"
 
 //banner for mobile
 import MobileBanner1 from "@/public/banner/m1.png"

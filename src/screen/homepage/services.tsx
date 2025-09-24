@@ -39,10 +39,10 @@ export function Services() {
 		},
 		{
 			number: "04",
-			title: "Delivery & Installation",
+			title: "Styling & Installation",
        icon:Accordion4,
 			description:
-				"Meticulous delivery and expert installation of every element, from architectural features to final touches, leaving your home perfectly styled and ready to live in.",
+				"We style and oversee every element with precision—furniture, art, textures, and accessories—so the final space feels cohesive, refined, and truly yours.",
 		},
 	];
 

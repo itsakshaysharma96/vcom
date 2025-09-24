@@ -26,7 +26,7 @@ export function BannerSlider() {
           />
         <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center px-6 text-center">
 
-          <h1 className="text-white font-serif leading-[1.3] tracking-wide font-semibold text-4xl md:text-7xl">
+          <h1 className="text-white font-serif leading-[1.3] tracking-wide font-semibold text-4xl md:text-7xl uppercase">
            Legal Policy
           </h1>
           {/* {subtitle ? (

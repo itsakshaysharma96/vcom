@@ -28,7 +28,7 @@ const OurProcess = () => {
           </div>
           <div className='mt-6 md:mt-0'>
             <p className="md:text-[22px] text-black md:text-right leading-[1.8] tracking-wider">
-            A clear, five‑step journey that keeps your project moving <br /> smoothly while preserving design integrity at every stage.
+            Whenever somebody hovers on this section - <br /> that box should change the color to the brown color that we have
             </p>
           </div>
         </div>

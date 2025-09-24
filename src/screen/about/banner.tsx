@@ -1,8 +1,5 @@
 import Image from "next/image"
-import Banner3 from '@/public/about/banner.png'
-
-import Banner3Banner from "@/public/banner/m2.png"
-import Link from "next/link"
+import Banner3 from "@/public/commonBanners/8.png"
 
 
 export function BannerSlider() {
@@ -29,12 +26,10 @@ export function BannerSlider() {
         <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center px-6 text-center">
 
           <h1 className="text-white font-serif leading-[1.3] tracking-widest font-bold text-3xl md:text-6xl">
-          State Of The Art Luxury Interiors
+          STATE OF THE ART LUXURY INTERIORS
           </h1>
             <p className="text-white/90 font-medium text-[14px] md:text-[17px] tracking-widest mt-2 leading-[1.5] max-w-6xl ">At Meher Sra Designs, we believe every space should tell a story of elegance, innovation, and bespoke craftsmanship. Our designs seamlessly blend modern aesthetics with timeless luxury, whether it’s residential, commercial, or hospitality environments.</p>
-          <Link href="/contact" className="btn-sophie md:text-lg mt-12 text-center flex rounded-none md:px-12 px-6 mx-auto md:mx-0 py-3 bg-primary tracking-wider text-primary-foreground hover:bg-primary/90">
-            Take A Look
-          </Link>
+
         </div>
       </div>
     </div>
