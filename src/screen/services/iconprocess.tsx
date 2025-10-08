@@ -1,9 +1,9 @@
 import Image, { StaticImageData } from 'next/image'
 import React from 'react'
-import Icon1 from '@/public/services/i1.png'
-import Icon2 from '@/public/services/i2.png'
-import Icon3 from '@/public/services/i3.png'
-import Icon4 from '@/public/services/i4.png'
+import Icon1 from '@/public/services/1.png'
+import Icon2 from '@/public/services/2.png'
+import Icon3 from '@/public/services/3.png'
+import Icon4 from '@/public/services/4.png'
 
 type ProcessItem = {
   title: string
@@ -32,7 +32,7 @@ const OurIconProcess = () => {
               alt={process.title}
               width={80}
               height={80}
-              className="absolute left-1/2 transform -translate-x-1/2 -mt-10"
+              className="absolute left-1/2 transform -translate-x-1/2 -mt-10 bg-primary h-[80px] w-[80px] p-4 rounded-full flex items-center justify-center"
             />
             <h3 className="text-2xl pt-18 md:text-[23px] font-serif font-semibold text-black leading-[1.3] tracking-wider">{process.title}</h3>
             <p className="text-[17px] text-black mt-4 leading-[1.8] tracking-wider">{process.description}</p>

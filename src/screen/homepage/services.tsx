@@ -6,11 +6,10 @@ import {
 	AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
-import  Accordion1 from "@/public/homepage/services/Accordian1.svg"; // Replace with your actual image path
-import  Accordion2 from "@/public/homepage/services/accordian2.svg"; // Replace with your actual image path
-import  Accordion3 from "@/public/homepage/services/Accordian3.svg"; // Replace with your actual image path
-import  Accordion4 from "@/public/homepage/services/Accordian4.svg"; // Replace with your actual image path
-import { Button } from "@/components/ui/button";
+import  Accordion1 from "@/public/homepage/services/1.png"; // Replace with your actual image path
+import  Accordion2 from "@/public/homepage/services/2.png"; // Replace with your actual image path
+import  Accordion3 from "@/public/homepage/services/3.png"; // Replace with your actual image path
+import  Accordion4 from "@/public/homepage/services/4.png"; // Replace with your actual image path
 import Link from "next/link";
 
 
@@ -62,7 +61,7 @@ export function Services() {
 
 							<AccordionTrigger className="flex items-center gap-6 hover:no-underline text-left py-3 m-0">
 								<div className="flex justify-between items-center w-full">
-									<div className="md:w-[50%] w-0"><Image src={service?.icon} alt={`Accor${index}`} width={50} height={50}/></div>
+									<div className="md:w-[50%] w-0"><Image src={service?.icon} alt={`Accor${index}`} width={50} height={50} className="h-[50px] w-[50px] rounded-full p-2 bg-primary"/></div>
 									<div className="flex items-center justify-start md:w-[50%] w-[100%] gap-3">
 										<div className="text-[20px] md:text-[35px] font-bold text-black md:min-w-[60px] min-w-[30px]">
 											{service.number}
