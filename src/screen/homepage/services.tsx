@@ -1,91 +1,110 @@
 "use client";
-import {
-	Accordion,
-	AccordionContent,
-	AccordionItem,
-	AccordionTrigger,
-} from "@/components/ui/accordion";
-import Image from "next/image";
-import  Accordion1 from "@/public/homepage/services/1.png"; // Replace with your actual image path
-import  Accordion2 from "@/public/homepage/services/2.png"; // Replace with your actual image path
-import  Accordion3 from "@/public/homepage/services/3.png"; // Replace with your actual image path
-import  Accordion4 from "@/public/homepage/services/4.png"; // Replace with your actual image path
-import Link from "next/link";
 
+import { useState } from "react";
 
 export function Services() {
+	const [activeTab, setActiveTab] = useState(2); // Default to Cybersecurity tab
+
 	const services = [
 		{
-			number: "01",
-			title: "Interior Architecture & Design",
-      icon:Accordion1,
-			description:
-				"Complete space planning and tailored interior solutions that seamlessly balance form and function, creating cohesive environments designed around your lifestyle and needs.",
+			title: "Network Solutions",
+			description: "Comprehensive network infrastructure design and implementation for optimal connectivity and performance.",
+			features: [
+				"Network Design & Architecture",
+				"Infrastructure Implementation",
+				"Performance Optimization",
+				"Network Security Integration"
+			],
+			cta: "Explore Network Solutions"
 		},
 		{
-			number: "02",
-			title: "FF&E Design",
-       icon:Accordion2,
-			description:
-				"Bespoke furniture, finishes, and accessories thoughtfully curated to reflect your aesthetic, adding depth, character, and timeless elegance to every space.",
+			title: "Data Center & Cloud",
+			description: "Scalable cloud solutions and data center management to support your business growth and digital transformation.",
+			features: [
+				"Cloud Migration & Strategy",
+				"Data Center Management",
+				"Hybrid Cloud Solutions",
+				"Disaster Recovery Planning"
+			],
+			cta: "Discover Cloud Solutions"
 		},
 		{
-			number: "03",
-			title: "Procurement",
-       icon:Accordion3,
-			description:
-				"End-to-end sourcing of premium materials, furnishings, and décor from trusted global partners, managed with precision to ensure quality, timeliness, and alignment with your design vision.",
+			title: "Cybersecurity",
+			description: "Proactive defense against threats with enterprise-grade security solutions.",
+			features: [
+				"Security Assessments & Audits",
+				"Threat Detection & Response",
+				"Governance, Risk & Compliance",
+				"Endpoint & Perimeter Security"
+			],
+			cta: "Secure Your Business"
 		},
 		{
-			number: "04",
-			title: "Styling & Installation",
-       icon:Accordion4,
-			description:
-				"We style and oversee every element with precision—furniture, art, textures, and accessories—so the final space feels cohesive, refined, and truly yours.",
+			title: "Workplace & Collaboration",
+			description: "Modern workplace solutions that enhance productivity and collaboration across your organization.",
+			features: [
+				"Digital Workplace Setup",
+				"Collaboration Tools Integration",
+				"Remote Work Solutions",
+				"Productivity Optimization"
+			],
+			cta: "Transform Your Workplace"
 		},
+		{
+			title: "Physical Security",
+			description: "Integrated physical security systems to protect your assets and ensure business continuity.",
+			features: [
+				"Access Control Systems",
+				"Surveillance & Monitoring",
+				"Intrusion Detection",
+				"Emergency Response Systems"
+			],
+			cta: "Secure Your Premises"
+		},
+		{
+			title: "Managed Services",
+			description: "End-to-end IT management services to keep your systems running smoothly and efficiently.",
+			features: [
+				"24/7 System Monitoring",
+				"Proactive Maintenance",
+				"Help Desk Support",
+				"Performance Optimization"
+			],
+			cta: "Get Managed Support"
+		}
 	];
 
 	return (
-		<section id="services" className="w-full px-6 md:py-16 py-10 bg-white">
-			<div className="max-w-7xl mx-auto">
-				<h2 className="font-serif text-2xl lg:text-4xl font-medium text-black tracking-widest mb-12 text-center mt-10">
-					HOW WE CAN HELP YOU
-				</h2>
-<div className="border-y border-black ">
-				<Accordion type="single" collapsible className="w-full space-y-4 mt-0">
-					{services.map((service, index) => (
-						<AccordionItem
-							key={index}
-							value={`item-${index}`}
-							className="border-b border-black m-0">
+		<section id="services" className="w-full py-16 bg-white">
+			<div className="max-w-7xl mx-auto px-6">
+				<div className="text-center mb-16">
+					<h2 className="text-4xl md:text-6xl font-bold text-black mb-6">
+						We design, Build, and Optimize IT Solutions That Keep Your Business Future-Ready.
+					</h2>
+					<p className="text-xl text-black max-w-4xl mx-auto leading-relaxed">
+						From network foundations to cloud and cybersecurity, Vcom Technologies brings together expertise and innovation to deliver technology that works for you.
+					</p>
+				</div>
 
-							<AccordionTrigger className="flex items-center gap-6 hover:no-underline text-left py-3 m-0">
-								<div className="flex justify-between items-center w-full">
-									<div className="md:w-[50%] w-0"><Image src={service?.icon} alt={`Accor${index}`} width={50} height={50} className="h-[50px] w-[50px] rounded-full p-2 bg-primary"/></div>
-									<div className="flex items-center justify-start md:w-[50%] w-[100%] gap-3">
-										<div className="text-[20px] md:text-[35px] font-bold text-black md:min-w-[60px] min-w-[30px]">
-											{service.number}
-										</div>
-										<div className="flex-1">
-											<h3 className=" md:text-[25px] text-[15px] md:font-normal font-semibold tracking-wider text-black">
-												{service.title}
-											</h3>
-										</div>
-									</div>
-								</div>
-							</AccordionTrigger>
-							<AccordionContent className="md:pl-[43rem] pl-10 md:pr-8 pb-4">
-								<p className="text-black leading-relaxed md:text-xl text-base">
-									{service.description}
-								</p>
-							</AccordionContent>
-						</AccordionItem>
-					))}
-				</Accordion>
-</div>
-        <Link href="#contactUs" className=" btn-sophie md:text-lg mt-12 text-center inline-flex uppercase rounded-none md:px-12 px-6 mx-auto md:mx-0 py-4 bg-primary tracking-wider text-primary-foreground hover:bg-primary/90">
-             Discuss My Project
-            </Link>
+				{/* Service Cards */}
+				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+					<div className="bg-[#091e58] h-[330px] rounded-[52px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] flex items-center justify-center">
+						<h3 className="text-[40px] font-bold text-white text-center">
+							Consult & design
+						</h3>
+					</div>
+					<div className="bg-[#2e3192] h-[330px] rounded-[52px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] flex items-center justify-center">
+						<h3 className="text-[40px] font-bold text-white text-center">
+							Engineer & automate
+						</h3>
+					</div>
+					<div className="bg-[#59a47a] h-[330px] rounded-[52px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] flex items-center justify-center">
+						<h3 className="text-[40px] font-bold text-white text-center">
+							Analyze & optimize
+						</h3>
+					</div>
+				</div>
+
 			</div>
 		</section>
 	);

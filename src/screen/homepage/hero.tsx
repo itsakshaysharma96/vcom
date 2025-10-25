@@ -1,60 +1,49 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import AboutImage from "@/public/homepage/about.png"
-import Image from "next/image"
-import { useInView } from "@/lib/useInView"
-import Link from "next/link"
-
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
+import Banner from "@/public/banner.png"
 export function Hero() {
-  const { ref, isInView } = useInView<HTMLImageElement>()
+	return (
+		<section className="relative w-full h-[700px] overflow-hidden">
+			{/* Background Image */}
+			<div className="absolute inset-0">
+				<Image
+					src={Banner}
+					alt="IT Infrastructure Background"
+					fill
+					className="object-cover"
+					priority
+				/>
+				{/* Overlay */}
+				<div className="absolute inset-0 bg-black/46" />
+			</div>
 
-  return (
-    <section id="about" className="w-full px-6 md:bg-gradient-to-r from-white to-background from-50% to-50% pt-16 md:mt-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-end">
-          <div>
-            <div className="md:pr-16">
-              <Image
-                ref={ref}
-                src={AboutImage}
-                alt="About Meher Sra Designs"
-                className={`hero-image w-full h-auto ${isInView ? 'in-view' : ''}`}
-              />
-            </div>
-          </div>
-
-          <div className="space-y-6 md:px-16 md:pb-16 md:mt-0 mt-8 text-center md:text-left">
-            <div>
-              {/* <p className=" text-xl lg:text-xl text-black mb-6">THE COMPANY</p> */}
-              <h2 className="font-serif text-3xl lg:text-4xl font-medium text-black mb-6 tracking-wide lg:tracking-widest leading-[1.4]">
-                ABOUT MEHER
-                <br />
-                and THE TEAM
-              </h2>
-            </div>
-
-            <div className="space-y-4 text-black leading-relaxed text-[14px]">
-              <p>
-              Meher Sra Designs is a New Delhi - based interior design studio led by Meher Sra Rohatgi - an interior designer with a global perspective and a deeply personal approach.
-              </p>
-              <p>
-                Rooted in craftsmanship, emotion, and collaboration, the studio creates refined, timeless interiors that
-                are tailored to how people truly live.
-              </p>
-              <p>
-                Whether it&apos;s a city apartment, a holiday home, or a boutique workspace, Meher&apos;s design language balances
-                classical restraint with modern nuance always guided by the soul of the space and the story of its
-                inhabitants.
-              </p>
-            </div>
-
-            <Link href="/about-us" className="btn-sophie md:text-lg mt-12 text-center inline-flex rounded-none md:px-12 px-6 mx-auto md:mx-0 py-3 bg-primary tracking-wider text-primary-foreground hover:bg-primary/90">
-             READ MORE
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
+			{/* Content */}
+			<div className="relative z-10 h-full flex items-center">
+				<div className="max-w-7xl mx-auto px-6 w-full">
+					<div className="max-w-2xl">
+						<h1 className="text-white text-4xl md:text-6xl font-bold mb-6 leading-tight">
+							Your Trusted IT Infrastructure Partner
+						</h1>
+						<p className="text-white text-lg md:text-xl mb-8 leading-relaxed">
+							Building agile, scalable, and future-ready technology solutions for your business.
+						</p>
+						<Button
+							asChild
+							className="bg-transparent border-2 border-[#6bebb3] text-white hover:bg-[#6bebb3] hover:text-black px-8 py-3 text-lg font-medium transition-all duration-300"
+						>
+							<Link href="#services">
+								Know More
+								<svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+								</svg>
+							</Link>
+						</Button>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 }

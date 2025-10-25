@@ -1,0 +1,11 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/app/career/page": [
+      "static/media/06ba6ef833b337bc-s.p.0faac26c.woff2",
+      "static/media/900fa4e87ce384b1-s.p.2fbf6d59.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

@@ -1,22 +1,24 @@
 import { Hero } from "./hero"
-import { BannerSlider } from "./banner-slider"
 import { Services } from "./services"
-import { Projects } from "./projects"
-import { Contact } from "./contact"
-import { InstagramSection } from "./instagramSection"
-import { UdcSection } from "./udc"
+import { CeoInsights } from "./ceo-insights"
+import { IndustryExpertise } from "./industry-expertise"
+import { SuccessStories } from "./success-stories"
+import { Partners } from "./partners"
+import { Insights } from "./insights"
+import { TabSection } from "./tab-section"
 
 export function Homepage() {
   return (
-    <div className="min-h-screen bg-white">
-      <BannerSlider />
-
+    <div className="min-h-screen bg-white pt-10">
       <Hero />
       <Services />
-      <Projects />
-      <UdcSection />
-      <InstagramSection />
-      <Contact />
+      <CeoInsights />
+      <TabSection />
+
+      <IndustryExpertise />
+      <SuccessStories />
+      <Partners />
+      <Insights />
     </div>
   )
 }

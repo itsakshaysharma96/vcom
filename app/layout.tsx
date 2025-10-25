@@ -1,41 +1,45 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Vollkorn, Inter } from "next/font/google"
-import "./globals.css"
-import { Header } from "@/src/screen/components/header"
-import { Footer } from "@/src/screen/components/footer"
+import type React from "react";
+import type { Metadata } from "next";
+import { Vollkorn, Inter } from "next/font/google";
+import "./globals.css";
+import { Header } from "@/src/screen/components/header";
+import { Footer } from "@/src/screen/components/footer";
 
 const vollkorn = Vollkorn({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-vollkorn",
-})
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-vollkorn",
+});
 
 const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  display: "swap",
-  variable: "--font-inter",
-})
+	subsets: ["latin"],
+	weight: ["300", "400", "500", "600"],
+	display: "swap",
+	variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
-  title: "Meher Sra Designs - Interior Design Studio",
-  description: "New Delhi-based interior design studio creating refined, timeless interiors",
-  generator: "v0.app",
-}
+	title: "Vcom Technologies - IT Infrastructure & Technology Solutions",
+	description:
+		"Your trusted IT infrastructure partner. We design, build, and optimize technology solutions that keep your business future-ready.",
+	generator: "Next.js",
+};
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" className={`${vollkorn.variable} ${inter.variable} antialiased`}>
-      <body>
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
-  )
+	return (
+		<html
+			lang="en"
+			className={`${vollkorn.variable} ${inter.variable} antialiased`}
+		>
+			<body>
+				<Header />
+				{children}
+				<Footer />
+			</body>
+		</html>
+	);
 }

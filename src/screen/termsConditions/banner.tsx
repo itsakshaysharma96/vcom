@@ -1,6 +1,4 @@
 import Image from "next/image"
-import Banner3Banner from "@/public/banner/m5.png"
-import Banner3 from "@/public/commonBanners/9.png"
 
 
 export function BannerSlider() {
@@ -10,20 +8,7 @@ export function BannerSlider() {
     <section id="hero" className="w-full md:pb-0">
     <div className="mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-1 items-center relative">
-          <Image
-            src={Banner3}
-            alt="terms conditions Banner"
-            width={1200}
-            height={400}
-            className="w-full h-[400px] md:h-[700px] object-cover md:block hidden"
-          />
-          <Image
-            src={Banner3}
-            alt="terms conditions Banner Mobile"
-            width={600}
-            height={400}
-            className="w-full h-[70vh] object-cover md:hidden block"
-          />
+
         <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center px-6 text-center">
 
           <h1 className="text-white font-serif leading-[1.3] tracking-wide font-semibold text-4xl md:text-7xl uppercase">
